@@ -1,38 +1,306 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400&display=swap');
+html {
+  position: relative;
   text-align: center;
+  border: none;
+  font-family: 'Prompt';
+  background-color: #cbf1fa;
+}
+p {
+  font-family: 'Reem Kufi', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+form {
+  right: 2px;
+  bottom: 0;
+  text-align: start;
+}
+textarea {
+  max-width: 250px;
+  max-height: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 10px;
+  grid-auto-rows: 140px;
+  grid-template-areas:
+    'a a a a a a b b b'
+    'a a a a a a b b b'
+    'a a a a a a b b b'
+    'a a a a a a b b b'
+    'c c c c c c c c c';
+  align-items: start;
+
+  margin: 0px 100px 0px 100px;
+  padding: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.leftBox {
+  grid-area: a;
+  padding: 90px;
+}
+
+.rightBox {
+  grid-area: b;
+  padding: 90px;
+}
+.bottomBox {
+  grid-area: c;
+  padding: 150px;
+  margin-top: 300px;
+}
+
+/* Header */
+.Header {
+}
+.topImage {
+  max-height: 320px;
+  min-width: 105%;
+  object-fit: cover;
+  object-position: 0 55%;
+}
+.headerObjects {
+  position: absolute;
+  display: flex;
+  top: 130px;
+  left: 50%;
+  color: #ffffff;
+  transform: translate(-90%, -50%);
+  align-items: center;
+}
+.headerPortraitImage {
+  max-height: 180px;
+  max-width: 180px;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+.headerObjectsWithoutImage {
+}
+.headerName {
+  text-align: start;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: xx-large;
+  margin: 10px 0 30px 40px;
+  display: flex;
+}
+.headerLocationJob {
+  font-weight: 300;
+  font-size: smaller;
+  opacity: 80%;
+}
+.headerSloganBackground {
+  margin-left: 40px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.headerContactButton {
+  height: 40px;
+  width: 110px;
+  border: none;
+  color: white;
+  background-color: #214384;
+  border-radius: 30px;
+  right: -140px;
+  bottom: 20px;
+  font-size: 12px;
+  position: absolute;
+}
+.headerSocialMedias {
+  position: absolute;
+  left: 220px;
+}
+
+.headerSocialMedias,
+.instagramIcon,
+.mailIcon,
+.linkedInIcon {
+  margin-right: 10px;
+}
+
+.instagramIcon {
+  max-width: 40px;
+  border-radius: 100%;
+}
+.linkedInIcon {
+  max-width: 40px;
+  border-radius: 100%;
+}
+.mailIcon {
+  max-width: 40px;
+  border-radius: 100%;
+}
+.githubIcon {
+  max-width: 40px;
+  border-radius: 100%;
+}
+
+.tabTitleButtonick {
+  height: 33px;
+}
+.aboutTitle,
+.whatAmIDoTabTitle,
+.joinedFairsTabTitle,
+.SkillsTabTitle,
+.HobbiesTabTitle,
+.ProjectsTabTitle,
+.ExperiencesTabTitle,
+.ServicesTabTitle {
+  font-family: 'Reem Kufi', sans-serif;
+
+  color: white;
+  padding: 10px;
+  margin-left: 20px;
+  background-color: #6ba7e4;
+  border-radius: 15px;
+  z-index: -1;
+  width: max-content;
+}
+.aboutTitle {
+}
+.whatAmIDoTabTitle {
+}
+.joinedFairsTabTitle {
+}
+.SkillsTabTitle {
+}
+.HobbiesTabTitle {
+}
+.ProjectsTabTitle {
+}
+.ExperiencesTabTitle {
+}
+.ServicesTabTitle {
+}
+
+.aboutTab,
+.skillsTab,
+.projectsTab {
+}
+
+.aboutText,
+.skillsText,
+.projectsText {
+  font-family: 'Reem Kufi', sans-serif;
+
+  background-color: white;
+  max-width: 1150px;
+  margin-bottom: 90px;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.whatAmIDoText,
+.joinedFairsText,
+.hobbiesText,
+.servicesText,
+.experiencesText {
+  font-family: 'Reem Kufi', sans-serif;
+
+  background-color: white;
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 390px;
+}
+.servicesText {
+}
+.servicesTab {
+  top: 0;
+  align-content: center;
+  text-align: center;
+}
+.servicesText {
+  padding: 30px;
+  align-content: center;
+  max-width: 100%;
+  max-height: 600px;
+}
+/* Carousel */
+.carousel {
+  background-color: white;
+  max-width: 1150px;
+  margin-bottom: 90px;
+  padding: 25px;
+  border-radius: 20px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.carouselItem {
+  background-color: #6ba7e4;
+  padding: 50px;
 }
+.carouselName {
+  font-size: 30px;
+  margin-top: -10px;
+}
+.carouselDescription {
+  margin-bottom: 30px;
+  color: khaki;
+}
+.carouselProjectScreenShot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+.carouselButton {
+  margin-top: 30px;
+  height: 40px;
+  width: 110px;
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  cursor: pointer;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-radius: 30px;
+}
+/* Carousel Finish */
+.contactTab {
+  margin-top: 50px;
+  background-color: white;
+  height: 750px;
+  border-radius: 20px;
+}
+.contactWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+}
+.contactImage {
+  width: 100%;
+}
+.aboutLeftSide {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.contactForm {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 150px;
+}
+.nameInput,
+.emailInput {
+  width: 250px;
+}
+.messageInput {
+  width: 250px;
+  height: 80px;
+}
+.contactTabButton {
+  height: 40px;
+  border: none;
+  color: white;
+  background-color: #214384;
+  border-radius: 30px;
+  display: flex;
+  padding: 13px;
+  margin-left: 30%;
+  margin-top: 15px;
 }
