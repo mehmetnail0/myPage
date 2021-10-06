@@ -1,0 +1,130 @@
+@media screen and (max-width: 992px) {
+  .App {
+    max-width: 100;
+  }
+  .topImage {
+    max-height: 220px;
+    width: 80%;
+    object-fit: cover;
+    object-position: 7 30%;
+  }
+
+  .headerObjects {
+    position: absolute;
+    display: flex;
+    top: 130px;
+    left: 50%;
+    color: #ffffff;
+    transform: translate(-90%, -50%);
+    align-items: center;
+  }
+  .headerPortraitImage {
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 50%;
+    margin-top: -70px;
+    margin-left: -70%;
+    position: absolute;
+  }
+  .headerName {
+    text-align: start;
+    font-size: medium;
+    margin: -70px 0 80px 10px;
+    display: flex;
+  }
+  .headerLocationJob {
+    visibility: hidden;
+  }
+
+  .headerContactButton {
+    height: 30px;
+    width: 90px;
+    border: none;
+    color: white;
+    background-color: #214384;
+    border-radius: 30px;
+    right: -130px;
+    bottom: 85px;
+    font-size: 11px;
+    position: absolute;
+  }
+  .headerSocialMedias {
+    bottom: 55px;
+    display: flex;
+    position: absolute;
+    left:10px;
+  }
+
+  .headerSocialMedias,
+  .instagramIcon,
+  .mailIcon,
+  .linkedInIcon,
+  .githubIcon {
+      width: 25px;
+  }
+
+  .instagramIcon {
+    max-width: 40px;
+    border-radius: 100%;
+  }
+  .linkedInIcon {
+    max-width: 40px;
+    border-radius: 100%;
+  }
+  .mailIcon {
+    max-width: 40px;
+    border-radius: 100%;
+  }
+  .githubIcon {
+    max-width: 40px;
+    border-radius: 100%;
+  }
+  .headerSloganBackground {
+  }
+  .headerSloganBackgroundSvg {
+    max-height: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: auto;
+    left: -20px;
+  }
+  
+
+}
+@media screen and (max-width: 500px) {
+  .headerPortraitImage {
+    max-height: 90px;
+    max-width: 80px;
+    top:100px;
+    border-radius: 100%;
+    margin-left: 1%;
+    position: absolute;
+  }
+  .headerName {
+    text-align: start;
+    font-size: medium;
+    margin: 120px 0 120px 10px;
+    display: flex;
+  }
+  .headerSloganBackground {
+  }
+  .headerSloganBackgroundSvg {
+    max-height: 25px;
+    position: absolute;
+    bottom: 105px;
+    right: auto;
+    left: -20px;
+  }
+  .headerContactButton {
+    height: 30px;
+    width: 90px;
+    border: none;
+    color: white;
+    background-color: #214384;
+    border-radius: 30px;
+    right: -100px;
+    bottom: 215px;
+    font-size: 11px;
+    position: absolute;
+  }
+}

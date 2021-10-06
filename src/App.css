@@ -63,9 +63,9 @@ textarea {
 }
 .topImage {
   max-height: 320px;
-  min-width: 105%;
+  min-width: 100%;
   object-fit: cover;
-  object-position: 0 55%;
+  object-position: 0 51%;
 }
 .headerObjects {
   position: absolute;
@@ -190,7 +190,6 @@ textarea {
 .skillsText,
 .projectsText {
   font-family: 'Reem Kufi', sans-serif;
-
   background-color: white;
   max-width: 1150px;
   margin-bottom: 90px;
@@ -304,3 +303,7 @@ textarea {
   margin-left: 30%;
   margin-top: 15px;
 }
+
+/*
+Mobile
+*/

@@ -1,4 +1,5 @@
 import './App.css';
+import "./MobileApp.css"
 import headerTopImage from './img/topimage.jpg';
 import portraitImage from './img/portraitImage.JPG';
 import carouselItem from './img/as.jpg';
@@ -55,6 +56,7 @@ function App() {
             </p>
             <div className='headerSloganBackground'>
               <svg
+              className="headerSloganBackgroundSvg"
                 width='280'
                 height='29'
                 viewBox='0 0 280 29'
@@ -287,7 +289,7 @@ function App() {
                 <div className='aboutLeftSide'>
                   <h1>Contact Form</h1>
                   <div className='contactIcon'>
-                    <i className='far fa-id-card fa-7x'></i>
+                    <i className='far fa-id-card fa-3x'></i>
                   </div>
                 </div>
                 <div className='contactForm'>
